@@ -3,6 +3,13 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+      "@home/*":["src/app/pages/home/*"],
+      "@auth/*":["src/app/auth/*"],
+      "@shared/*":["src/app/shared/*"],
+      "@env/*":["src/environtments/*"]
+    },
+    "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "strict": true,
     "noImplicitOverride": true,
