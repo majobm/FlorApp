@@ -1,0 +1,12 @@
+:root {
+  --main-bg-color: rgb(147, 165, 42);
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Roboto, Helvetica Neue, sans-serif;
+}
+nav {
+  background-color: var(--main-bg-color);
+}
