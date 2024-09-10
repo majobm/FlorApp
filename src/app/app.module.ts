@@ -12,7 +12,7 @@ import { PagesModule } from './pages/pages.module';
     AuthModule,
     PagesModule,
     SharedModule,
-    RouterModule
+    RouterModule,
   ],
   exports: [
     CommonModule,
