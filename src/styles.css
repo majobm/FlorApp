@@ -4,7 +4,15 @@ body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
-
-app-root {
-  height: 100%;
+/**********************************************
+ BEGIN Estilos del componente de autenticación
+***********************************************/
+app-auth{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+/**********************************************
+ END Estilos del componente de autenticación
+***********************************************/

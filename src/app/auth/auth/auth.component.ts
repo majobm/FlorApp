@@ -1,23 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrl: './login.component.css'
+  selector: 'app-auth',
+  templateUrl: './auth.component.html',
+  styleUrl: './auth.component.css',
 })
-export class LoginComponent implements OnInit {
+export class AuthComponent {
   isRightPannelActive: boolean = false;
-  authForm !: FormGroup;
+  authForm!: FormGroup;
 
-  constructor(private readonly fb: FormBuilder) { }
+  constructor(private readonly fb: FormBuilder) {}
 
   ngOnInit(): void {
     this.initForm();
   }
 
   onSubmit(): void {
-    console.log('save', this.authForm.value)
+    console.log('save', this.authForm.value);
   }
 
   onChangeAction(): void {
@@ -27,10 +27,7 @@ export class LoginComponent implements OnInit {
   private initForm() {
     this.authForm = this.fb.group({
       email: ['', Validators.required],
-      password: ['', Validators.required]
-    })
+      password: ['', Validators.required],
+    });
   }
-
-
-
 }
